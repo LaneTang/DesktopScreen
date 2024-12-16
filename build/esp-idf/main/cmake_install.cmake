@@ -1,4 +1,4 @@
-# Install script for directory: /home/tlane/esp/proj/hello_world/main
+# Install script for directory: /home/tlane/esp/proj/DesktopScreen/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

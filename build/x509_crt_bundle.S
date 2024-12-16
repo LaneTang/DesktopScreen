@@ -1,4 +1,4 @@
-/* * Data converted from /home/tlane/esp/proj/hello_world/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/tlane/esp/proj/DesktopScreen/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

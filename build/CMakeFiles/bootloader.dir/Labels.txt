@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-/home/tlane/esp/proj/hello_world/build/CMakeFiles/bootloader
-/home/tlane/esp/proj/hello_world/build/CMakeFiles/bootloader.rule
-/home/tlane/esp/proj/hello_world/build/CMakeFiles/bootloader-complete.rule
-/home/tlane/esp/proj/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-/home/tlane/esp/proj/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-/home/tlane/esp/proj/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-/home/tlane/esp/proj/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-/home/tlane/esp/proj/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-/home/tlane/esp/proj/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-/home/tlane/esp/proj/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/tlane/esp/proj/DesktopScreen/build/CMakeFiles/bootloader
+/home/tlane/esp/proj/DesktopScreen/build/CMakeFiles/bootloader.rule
+/home/tlane/esp/proj/DesktopScreen/build/CMakeFiles/bootloader-complete.rule
+/home/tlane/esp/proj/DesktopScreen/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/tlane/esp/proj/DesktopScreen/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/tlane/esp/proj/DesktopScreen/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/tlane/esp/proj/DesktopScreen/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/tlane/esp/proj/DesktopScreen/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/tlane/esp/proj/DesktopScreen/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/tlane/esp/proj/DesktopScreen/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
