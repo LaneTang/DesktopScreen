@@ -6,26 +6,33 @@
    software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
    CONDITIONS OF ANY KIND, either express or implied.
 */
-
 #include "main.h"
+
 #define CHIP_NAME "ESP32"
+
+#define vDelay_ms(ms)   vTaskDelay( ms * ( ( 1000 / (portTICK_PERIOD_MS) ) / 1000 ) )
 
 static const char *TAG = "MAIN APP";
 
-static void vTask_test_print(void *arg)
+
+void vTask_test_print(void *arg)
 {
+    uint8_t sec_num = 0;
     while (1) {
-        printf("this is a test task, printing test info\r\nthis message should be seen for every 2 seconds\r\n");
-        vTaskDelay(2000 / portTICK_PERIOD_MS);
+        printf("this is a test task, printing test info\r\n");
+        printf("this message should be seen for every 0.5 seconds\r\n");
+        printf("current second number: %d\r\n", sec_num);
+        sec_num++;
+        vDelay_ms(1000);
     }
 }
 
-static void vTask_chip_info_print(void *arg)
+void vTask_chip_info_print(void *arg)
 {
     while (1) {
-        printf("chip info print\r\nthis info should be seen for every 2 seconds\r\n");
+        printf("chip info print\r\nthis info should be seen for every 5 seconds\r\n");
         chip_info_print();
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+            vDelay_ms(5000);
     }
 }
 
@@ -38,11 +45,13 @@ void app_main(void)
     ESP_LOGW(TAG, "log warning info\n");
     ESP_LOGE(TAG, "log error info\n");
 
+    vDelay_ms(100);
+
     xTaskCreate(vTask_test_print, "vTask_test_print", 2048, NULL, 5, NULL);
     xTaskCreate(vTask_chip_info_print, "vTask_chip_info_print", 2048, NULL, 5, NULL);
 
     while(1){
-        ESP_LOGE(TAG, "ERROR OUCCURED: in freetos task");
+        vDelay_ms(100);  // periodic delay
     }
 }
 
